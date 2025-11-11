@@ -90,14 +90,13 @@
 <body>
     <div class="auth-container">
         <h1>UNITECH</h1>
-        <h2>Acesso como {{ profile | capitalize }}</h2>
+        <h2>Acesso como </h2>
         
-        {% if error %}
-            <p class="error">{{ error }}</p>
-        {% endif %}
-        {% if success %}
-            <p class="success">{{ success }}</p>
-        {% endif %}
+        
+            <p class="error"></p>
+      
+            <p class="success"></p>
+        
 
         <form method="POST">
             <input type="email" name="email" placeholder="E-mail" required>
@@ -111,7 +110,7 @@
                     REGISTRAR
                 </button>
             </div>
-        </form>
+        </form> 
         <p style="margin-top: 30px;">
             <a href="{{ url_for('select_profile') }}" class="back-link">← Voltar para seleção de perfil</a>
         </p>
